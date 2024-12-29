@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .container {
+    background-color: #444;
+}
+ 
+.tod {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(108, 99, 255, 1);
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid rgba(108, 99, 255, 1);
+    border-radius: 4px;
+}
+
+.btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    background-color: rgba(108, 99, 255, 1);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: rgba(90, 80, 230, 1);
+}
+
+.btn-night {
+    background-color: rgba(90, 80, 230, 1);
+}
+
+.btn-night {
+    background: #6C63FF;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.fg {
+    position: relative;
+    right: 40px;
+}
+
+.night-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.ul {
+    margin-top: 20px;
+    padding: 0;
+}
+
+.ul li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(108, 99, 255, 0.5);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body.dark .ul li {
+    background-color: #555;
+}
+
+.delete-btn {
+    margin-left: 10px;
+    color: red;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 16px;
+}
+
+.oy {
+    background-color: #555;
+     padding: 2px;
+
+}
